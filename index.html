@@ -1,0 +1,134 @@
+<!-- Name: Sadžida Halvadžić
+        Course: CS412
+        Project: MovieReviews website
+        Purpose: The purpose of this project is to create
+                  website for movie reviews and trailers.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Normalize.css is great addon to any ordinary webpage that helps webpage to display in normal way on all browsers and devices -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Animate.css is great source of ready to use animations that we can implement in our webpage -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Main css style -->
+    <link rel="stylesheet" href="css/main.css">
+    <link href="img/icon.ico" rel="icon">
+
+    <title>MovieReviews</title>
+  </head>
+
+  <body>
+
+    <!-- Top div that contains name of the website and Explore button that has auto-smooth scrolldown -->
+    <div class="top">
+      <div class="div-content">
+        <h1 id="title">MovieReviews</h1>
+        <a href="#besth"><button id="explore-button">Explore</button></a>
+      </div>
+    </div>
+
+    <!-- Next div below top div, that contains the title for our section below -->
+    <div id="besth" class="best-header">
+      <div class="div-content">
+        <h1>Best of the best</h1>
+        <p>Movies below are my personal favorites.</p>
+      </div>
+    </div>
+    <!-- Div with flex organization inside with multiple divs which represent each movie  -->
+    <div class="row">
+      <!-- It has two columns with 3 to 4 elements inside -->
+      <div class="column">
+        <!-- Each element is one movie with its specific characteristics -->
+        <a href="movies/inception.html"><div id="inception" class="image-div">
+          <div class="movie-desc-background"></div>
+          <div class="movie-desc">
+            <h3>Inception</h3>
+            <p><span class="bold-text">Rating:</span> 8.8</p>
+            <p><span class="bold-text">Year:</span> 2010</p>
+            <p><span class="bold-text">Genre:</span> Action</p>
+          </div>
+          <h2>Inception</h2>
+        </div></a>
+        <a href="movies/accountant.html"><div id="accountant" class="image-div">
+          <div class="movie-desc-background"></div>
+          <div class="movie-desc">
+            <h3>The Accountant</h3>
+            <p><span class="bold-text">Rating:</span> 7.3</p>
+            <p><span class="bold-text">Year:</span> 2016</p>
+            <p><span class="bold-text">Genre:</span> Action</p>
+          </div>
+          <h2>The Accountant</h2>
+        </div></a>
+        <a href="movies/joker.html"><div id="joker" class="image-div">
+          <div class="movie-desc-background"></div>
+          <div class="movie-desc">
+            <h3>Joker</h3>
+            <p><span class="bold-text">Rating:</span> 8.6</p>
+            <p><span class="bold-text">Year:</span> 2019</p>
+            <p><span class="bold-text">Genre:</span> Drama</p>
+          </div>
+          <h2>Joker</h2>
+        </div></a>
+        <a href="movies/intouchables.html"><div id="intouchables" class="image-div">
+          <div class="movie-desc-background"></div>
+          <div class="movie-desc">
+            <h3>Intouchables</h3>
+            <p><span class="bold-text">Rating:</span> 8.5</p>
+            <p><span class="bold-text">Year:</span> 2011</p>
+            <p><span class="bold-text">Genre:</span> Comedy</p>
+          </div>
+          <h2>Intouchables</h2>
+        </div></a>
+
+      </div>
+      <div class="column">
+        <a href="movies/lawabidingcitizen.html"><div id="lawabidingcitizen" class="image-div">
+          <div class="movie-desc-background"></div>
+          <div class="movie-desc">
+            <h3>Law Abiding Citizen</h3>
+            <p><span class="bold-text">Rating:</span> 7.4</p>
+            <p><span class="bold-text">Year:</span> 2009</p>
+            <p><span class="bold-text">Genre:</span> Crime</p>
+          </div>
+          <h2>Law Abiding Citizen</h2>
+        </div></a>
+        <a href="movies/prisoners.html"><div id="prisoners" class="image-div">
+          <div class="movie-desc-background"></div>
+          <div class="movie-desc">
+            <h3>Prisoners</h3>
+            <p><span class="bold-text">Rating:</span> 8.1</p>
+            <p><span class="bold-text">Year:</span> 2013</p>
+            <p><span class="bold-text">Genre:</span> Crime</p>
+          </div>
+          <h2>Prisoners</h2>
+        </div></a>
+        <a href="movies/homealone.html"><div id="homealone" class="image-div">
+          <div class="movie-desc-background"></div>
+          <div class="movie-desc">
+            <h3>Home Alone</h3>
+            <p><span class="bold-text">Rating:</span> 7.6</p>
+            <p><span class="bold-text">Year:</span> 1990</p>
+            <p><span class="bold-text">Genre:</span> Comedy</p>
+          </div>
+          <h2>Home Alone</h2>
+        </div></a>
+      </div>
+
+    <!-- Footer contains info about developer  -->
+    <div class="footer">
+      <div class="div-content">
+        <p><span class="bold-text">Sadzida Halvadzic Development</span></p>
+        <p>Copyright. All rights reserved</p>
+      </div>
+    </div>
+
+    <!-- Including jQuery, my smoothscroll script for Explore button and main.js code for manipulating styles -->
+    <script src="js/jquery/jquery.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
